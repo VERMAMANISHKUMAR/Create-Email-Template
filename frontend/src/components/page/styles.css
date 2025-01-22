@@ -1,0 +1,320 @@
+.app-container {
+          font-family: 'Arial', sans-serif;
+          color: #333;
+          padding: 2rem;
+          max-width: 1200px;
+          margin: auto;
+          background-image: conic-gradient(red, yellow, green);
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 40px;
+          
+        }
+        
+        .app-container .clear-btn {
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          padding: 0.6rem 1.2rem;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: all 0.3s ease-in-out;
+          margin-right: -90%;
+          margin-top: -6px;
+        }
+        .Main-Header{
+          
+          color: #fff;
+          margin-top: -50px;
+        }
+        .app-container .clear-btn:hover {
+          background-color: #3876b7;
+          color: #fff;
+        }
+    
+        .app-container .layout {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 10px;
+        }
+        
+        .app-container .layout .preview {
+          flex: 1 1 38%; /* Adjust preview to occupy 70% of the container */
+          min-width: 300px;
+          background: #fff;
+          border: 1px solid #d9e8f9;
+          border-radius: 8px;
+          padding: 1rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        }
+        
+        .app-container .layout .editor {
+          flex: 1 1 35%; /* Set editor to occupy 30% of the container */
+          min-width: 300px;
+          background: #fff;
+          border: 1px solid #d9e8f9;
+          border-radius: 8px;
+          padding: 1rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .app-container .layout .preview .preview-content {
+          min-height: 350px;
+          background: #f5f5f5;
+          border: 1px dashed #b3d2f7;
+          padding: 1rem;
+          border-radius: 8px;
+          overflow-y: auto;
+          max-height: 300px;
+        }
+        
+        .app-container .layout .preview .preview-content:hover {
+          background-color: #fafafa;
+          border-color: #3c74b2;
+        }
+        /* ------------------------------------Button Style------------------ */
+        .button-group {
+          display: flex;
+          gap: 5px;
+          margin-bottom: 20px;
+        }
+        
+        .download-btn,
+        .view-btn {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        
+
+         
+        }
+        
+        .download-btn:hover,
+        .view-btn:hover {
+          background-color: #0056b3;
+        }
+        
+       /*  */
+       .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .layout {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      
+      .preview {
+        width: 45%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+      }
+      
+      .editor {
+        width: 45%;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      button {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+      .clear-btn {
+        margin: 10px;
+      }
+      
+      .button-group {
+        margin-top: 20px;
+      }
+      
+      hr {
+        margin: 20px 0;
+      }
+      /* --------------------------------- */
+      /* Container for the app */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full height */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Layout for left (preview) and right (editor) sections */
+.layout {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left preview section */
+.preview {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-y: auto; /* Scrollable content vertically */
+  max-height: 80vh; /* Limit the height for scrolling */
+}
+
+/* Right editor section */
+.editor {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-y: auto; /* Scrollable content vertically */
+  max-height: 80vh; /* Limit the height for scrolling */
+}
+
+/* Button Group styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styling for clear and action buttons */
+.clear-btn,
+.download-btn,
+.view-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background-color: #dc3545; /* Red for clear button */
+}
+
+/* Button hover effect */
+.clear-btn:hover,
+.download-btn:hover,
+.view-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Editor section titles */
+.editor-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Rich Text Editor component */
+.jodit-editor {
+  height: 300px; /* Adjust editor height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Preview Content section */
+.preview-content {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.preview-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.preview-content div {
+  margin-bottom: 20px;
+}
+
+.logobutton {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Scrollbars for better visibility */
+.preview::-webkit-scrollbar,
+.editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.preview::-webkit-scrollbar-thumb,
+.editor::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.preview::-webkit-scrollbar-thumb:hover,
+.editor::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+/* ------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.page-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;
+}
